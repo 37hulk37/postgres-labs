@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: pdb
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: polytech
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - '5432:5432'
